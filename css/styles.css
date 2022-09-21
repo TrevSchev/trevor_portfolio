@@ -1,0 +1,368 @@
+body {
+    background-image:linear-gradient(#46879B, #065a74) ;
+    margin: 0;
+    padding-bottom: 65px;
+    position: relative;
+}
+
+header {
+    background-color: #004A61;
+    width: 100%;
+    left: 0;
+    margin-bottom: 75px;
+
+}
+
+#sight_logo {
+    width: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.gd_nav {
+    background-color: #012d3a;
+    width: 100%;
+    height: 65px;
+}
+
+.gd_nav .gd_ul li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    font-family: serif;
+}
+
+.gd_nav .gd_ul a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.gd_nav .gd_ul a:hover{
+    color: #258381;
+    background-color: #004A61;
+}
+
+.gd_nav .gd_ul li ul{
+    /* border: 2px solid red; */
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    position: absolute;
+    background-color: #012d3a;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.gd_nav .gd_ul li ul li{
+    padding: 10px;
+}
+
+.gd_nav .gd_ul li:hover ul {
+    display: block;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Gentium Basic', serif;
+    text-decoration: underline;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Quattrocento', serif;
+}
+
+h3 {
+    /* border: 2px solid red; */
+    color: #011c24;
+    font-size: 23px;
+    margin: 10px;
+    line-height: 1.75;
+    font-family: 'Quattrocento', serif;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 16px;
+    line-height: 2;
+    text-indent: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.covers_ul li {
+    color: whitesmoke;
+    font-size: 15px;
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p a {
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+
+p::first-line{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#center_home_covers {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #center_home_covers {
+        flex-flow: row wrap;
+    }
+    .gd_nav .gd_ul{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .page_contents {
+        width: 100%;
+    }
+    .page_contents .page_titles {
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    .page_contents .page_pictures {
+        width: 100%;
+
+    }
+
+}
+
+.image_container{
+    /* border: 2px solid red; */
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.home_covers {
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 300px;
+
+}
+
+.overlay{
+    /* border: 2px solid red; */
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #c3f1f0;
+}
+
+.text {
+    /* border: 2px solid red; */
+    color: #012d3a;
+    font-size: 40px;
+    margin-top: 120px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image_container:hover .overlay {
+    opacity: .9;
+    cursor: pointer;
+}
+
+
+/* .page_titles {
+    border: 2px solid red;
+    width: 57%;
+    margin: auto;
+    height: 1000px;
+} */
+
+/* .page_pictures {
+    border: 2px solid red;
+    float: left;
+}
+ */
+
+     /* #page_contents div {
+    display: inline-block;
+    justify-content: center;
+} */
+
+.page_contents {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.carousel_container{
+    margin: auto;
+    width: 45%;
+}
+
+.carousel_photos{
+    margin: auto;
+    width: 75%;
+}
+
+.page_pictures {
+    /* border: 2px solid red; */
+    width: 45%;
+    height: 55%;
+}
+.menu_pictures {
+    /* border: 2px solid red; */
+    width: 45%;
+    height: 55%;
+}
+
+.menu_pictures:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.5);
+}
+
+.thumbnails {
+    /* border: 2px solid red; */
+    width: 45%;
+    padding: 5px;
+}
+
+.thumbnails:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.35);
+}
+
+.page_pictures img {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+.menu_pictures img {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.page_contents .page_titles {
+    /* border: 2px solid red; */
+    width: 50%;
+}
+
+.coverpage_titles {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.coverpage_titles img {
+    width: 24%;
+}
+
+hr {
+    border: 2px solid #043445;
+    border-radius: 2px;
+}
+
+/* #video {
+    float: right;
+    margin: 10px 20px;
+} */
+
+/* .eagle_scout {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1250px;
+} */
+
+/* .es-container {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+label {
+    font-size: 18px;
+}
+
+input[type=text], textarea {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form_container {
+    /* border: 2px solid red; */
+    width: 850px;
+    margin: 20px auto 50px;
+    padding: 20px;
+    background-image:linear-gradient(#46879B 60%, #0d6d8a);
+    box-shadow: 0px 20px 30px 20px #004A61;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 25px 30px ;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn {
+    text-align: right;
+}
+
+.empty {
+    /* border: 2px solid red; */
+    height: 78px;
+}
+
+footer {
+    /* display: block; */
+    /* position: fixed; */
+    position: absolute;
+    background-color: #012d3a;
+    width: 100%;
+    bottom: 0;
+    height: 65px;
+    text-align: right;
+}
+
+footer a{
+    color: #fff;
+}
+
+.fa-brands{
+    /* border: 2px solid red; */
+    /* transform: translateY(20px); */
+    padding: 30px 10px;
+    /* margin-right: 5px; */
+}
+
+.icon_container {
+    /* border: 2px solid red; */
+    margin-right: 20px;
+}
