@@ -233,6 +233,17 @@ p::first-line{
     width: 45%;
     height: 55%;
 }
+.menu_pictures {
+    /* border: 2px solid red; */
+    width: 45%;
+    height: 55%;
+}
+
+.menu_pictures:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.5);
+}
+
 .thumbnails {
     /* border: 2px solid red; */
     width: 45%;
@@ -245,6 +256,10 @@ p::first-line{
 }
 
 .page_pictures img {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+.menu_pictures img {
     /* border: 2px solid red; */
     width: 100%;
 }
